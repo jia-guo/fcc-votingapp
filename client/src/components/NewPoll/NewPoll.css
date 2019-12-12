@@ -1,0 +1,25 @@
+.newpoll-dialog h3 {
+	padding-bottom: 0 !important;
+}
+
+.newpoll-question {
+	width: calc(100% - 20px) !important;
+	margin: 0 auto 20px auto;
+	padding: 0 10px;
+}
+
+.newpoll-option-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.newpoll-option-input {
+	flex-grow: 1;
+}
+
+.newpoll-dialog svg {
+	width: 18px !important;
+	height: 18px !important;
+	padding: 12px 12px;
+}

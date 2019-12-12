@@ -1,0 +1,125 @@
+.poll-detial {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.poll-detail-info {
+	margin: 30px 50px;
+	margin-bottom: 10px !important;
+/*	opacity: 0;
+    animation: fade-in-bottom 0.8s 0.2s ease-in-out;
+	animation-fill-mode: forwards;  */
+}
+
+.poll-detail .text-title-2 {
+	margin: 20px 0;
+}
+
+.poll-detail-info .fa-question{
+	font-size: 4.6rem;
+	color: #424242;
+}
+
+.poll-detail-info-desc {
+	margin: 10px 0;
+}
+
+.poll-detail-info-desc .text-title-5 {
+	line-height: 1.5rem;
+	color: #757575;
+}
+
+.poll-detail-info-btn {
+	margin: 10px 20px 10px 0;
+/*	opacity: 0;
+ 	animation: fade-in-bottom 1s 0.6s ease-in-out;
+	animation-fill-mode: forwards; */
+}
+
+.poll-detail-info .fa-twitter {
+	position: relative;
+	top: -1px;
+	color: #fff;
+}
+
+.poll-detail-chart {
+	width: calc(100% - 100px);
+	height: calc(100% - 280px);
+	margin: 10px auto;
+	position: relative;
+	overflow-y: auto;
+}
+
+.poll-detail-chart .bar {
+	position: absolute;
+	background: #FF9800;
+}
+
+.poll-detail-chart .label {
+	position: relative;
+	top: -15px;
+	font-weight: 300;
+    font-size: 0.9rem;
+    color: #757575;
+    white-space: nowrap;
+}
+
+.poll-detail-chart .vote {
+	position: absolute;
+	top: 5px;
+    right: 7px;
+    font-weight: 300;
+    font-size: 0.8rem;
+	color: #fff;
+}
+
+@media all and (max-width: 800px) {
+	.poll-detail-info {
+		margin: 30px;
+	}
+	.poll-detail-chart {
+		width: calc(100% - 60px);
+		margin: 10px auto;
+	}
+}
+
+@media all and (max-width: 700px) {
+	.poll-detail-info .fa-question{
+		font-size: 2.4rem;
+	}
+}
+
+@media all and (max-width: 500px) {
+	.poll-detail-info {
+		margin: 30px 15px;
+		text-align: center;
+	}
+	.poll-detail-chart {
+		width: calc(100% - 30px);
+		margin: 10px auto;
+	}
+}
+
+@media all and (max-width: 420px) {
+	.poll-detail-info-desc {
+		display: none;
+	}
+	.poll-detail-info-btn {
+		width: calc(100vw - 60px);
+	}
+}
+
+@media all and (max-width: 330px) {
+	.poll-detail-info {
+		margin: 30px 0px;
+	}
+	.poll-detail-info-btn {
+		width: calc(100vw - 30px);
+	}
+	.poll-detail-chart {
+		width: 100%;
+		margin: 10px auto;
+	}
+}

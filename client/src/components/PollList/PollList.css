@@ -1,0 +1,124 @@
+.poll-list-container {
+	padding-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: flex-start;
+}
+
+.list-search, .list-rank {
+	display: flex;
+    align-items: baseline;
+    margin: 0 25px;
+}
+
+.list-search-input {
+	top: -4px;
+}
+
+.poll-list-container .text-title-3 {
+	margin-right: 15px;
+}
+
+.poll-list {
+	height: 65vh;
+	margin-top: 20px;
+	overflow: scroll;
+	opacity: 0;
+	animation: fade-in-bottom 1s 0.2s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+.poll-list-item>div>div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 14px 28px !important;
+	cursor: pointer;
+}
+
+.poll-list-primarytext .voted {
+    font-size: 12px;
+    font-weight: 100;
+    color: #757575;
+    margin-left: 5px;
+    transform: rotate(-12deg);
+}
+
+.poll-list-icon {
+	position: static !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	order: 1;
+}
+
+.editBtn {
+	font-size: 1.4rem !important;
+	color: #FF9800;
+}
+
+.poll-list-item div div div:nth-child(2){
+	flex-grow: 1;
+	padding: 0 20px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	order: 2;
+}
+
+.list-item-primarytext {
+	
+	flex-grow: 1;
+	padding: 0 20px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	order: 2;
+}
+
+.list-item-secondary {
+	margin: 0 !important;
+	min-width: 220px;
+    text-align: right;
+	order: 3;
+}
+
+.list-item-secondary .bar{
+	font-weight: 100;
+	margin: 0 5px;
+}
+
+@media all and (max-width: 600px){
+	.poll-list-icon {
+		order: 3;
+	}
+	.poll-list-item div div div:nth-child(2){
+		padding: 0 20px 0 0;
+	}
+	.list-item-secondary {
+		display: none; 
+	}
+}
+
+@media all and (max-width: 440px){
+	.list-search , .list-rank {
+		margin: 0;
+	}
+	h3.text-title-3 {
+		font-size: 1.4rem; 
+		margin-top: 30px;
+	}
+	.poll-list {
+		height: 55vh;
+	}
+	.poll-list-item>div>div {
+		padding: 14px !important;
+	}
+}
+
+@media all and (max-width: 370px){
+	.list-search-input, .list-rank-select {
+		width: calc(100vw - 120px) !important;
+	}
+}

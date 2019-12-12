@@ -1,0 +1,24 @@
+{
+  "name": "2poll-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.3",
+    "jsonwebtoken": "^7.4.1",
+    "mongoose": "^4.10.7",
+    "passport": "^0.3.2",
+    "passport-local-mongoose": "^4.0.0",
+    "serve-favicon": "^2.4.3"
+  }
+}

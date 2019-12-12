@@ -1,0 +1,42 @@
+.poll-question {
+	padding: 30px 20px 0 20px;
+	font-weight: 500;
+}
+
+.poll-vote-wrapper {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.poll-vote-wrapper p {
+	padding: 25px 20px 0 20px;
+}
+
+.poll-info {
+	margin: 20px;
+	line-height: 1.2rem;
+}
+
+@media all and (max-width: 620px) {
+	.poll-question {
+		padding: 30px 0 0 0;
+	}
+	.poll-vote-wrapper {
+		flex-wrap: wrap;
+	}
+	.poll-vote-option {
+		width: 100% !important;
+		top: -10px;
+	}
+	.poll-vote-wrapper p {
+		padding: 25px 0 0 0;
+	}
+}
+
+@media all and (max-width: 540px) {
+	.poll-vote-btn {
+		width: 100%;
+		margin-bottom: 16px;
+	}
+}

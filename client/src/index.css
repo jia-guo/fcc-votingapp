@@ -1,0 +1,249 @@
+/* theme color: 
+     orange500 #FF9800
+     grey500 #9E9E9E
+     grey400 #BDBDBD
+   background color: 
+   	 #F0F0F0;
+*/
+
+/* ====== reset ====== */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+button span {
+	font-weight: 300 !important;
+}
+
+/* ====== global ====== */
+body {
+  min-width: 280px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  background: #F0F0F0;
+  line-height: 1;
+  user-select: none;
+  overflow: hidden;
+}
+
+.app-root {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	overflow: hidden;
+}
+
+/* ====== reuse ====== */
+
+/* --- container --- */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  height: calc(100vh - 60px);
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* --- text --- */
+.text-title-1 {
+	font-size: 3.2rem;
+	font-weight: 100;
+}
+
+.text-title-2 {
+	font-size: 2.4rem;
+	font-weight: 100;
+}
+
+.text-title-3 {
+	font-size: 1.7rem;
+	color: #FF9800;
+	font-weight: 100;
+}
+
+.text-title-4 {
+	font-size: 2.2rem;
+	font-weight: 100;
+	color: #616161;
+}
+
+.text-title-5 {
+	font-weight: 300;
+}
+
+.text-title-6 {
+	font-size: 0.9rem;
+	font-weight: 100;
+}
+
+em {
+	color: #FF9800;
+}
+
+/* --- divided page --- */
+
+.divide::before, .divide::after {
+	content: '';
+	width: 50vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+
+.divide::before{
+	background: #FEFEFE;
+	left: 0;
+}
+
+.divide::after{
+	background: #F0F0F0;
+	right: 0;
+}
+
+@media all and (max-width: 700px){
+	.divide::before, .divide::after {
+		background: #FEFEFE;
+	}
+}
+
+/* --- background-poll1 --- */
+.background-poll1 {
+	width: 100vw;
+	height: 55vh;
+	position: absolute;
+	bottom: -125px;
+	right: -70px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 100% 100%;
+	transform: rotate(-11deg);
+	z-index: -1;
+}
+
+@media all and (max-width: 800px) {
+	.background-poll1 {
+		bottom: -80px;
+		transform: rotate(-15deg);
+	}
+}
+
+@media all and (max-width: 650px) {
+	.background-poll1 {
+		width: 110vw;
+		bottom: -70px;
+	}
+}
+
+@media all and (max-width: 500px) {
+	.background-poll1 {
+		width: 120vw;
+		bottom: -50px;
+	}
+}
+
+/* --- background-poll2 --- */
+.background-poll2 {
+	width: 50vw;
+	height: 100vh;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 0% 100%;
+	opacity: 0.4;
+	z-index: -1;
+}
+
+@media all and (max-width: 700px) {
+	.background-poll2 {
+		opacity: 0;
+	}
+}
+
+/* --- left and right --- */
+.left-right-wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.left, .right {
+	height: 100vh;
+	width: 50vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+@media all and (max-width: 700px){
+	.left-right-wrapper{
+		flex-direction: column;
+	}
+	.left, .right {
+		width: 100vw;
+		height: auto;
+	}
+}
+
+/* ====== animation ====== */
+@keyframes fade-in-bottom {
+	0% {
+		opacity: 0;
+		transform: translate(0, 30px);
+	}
+	30% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
